@@ -1,0 +1,60 @@
+{
+  "title": "Prodotti",
+  "detail": {
+    "brand": "Marchio",
+    "code": "N. articolo",
+    "rating": "Valutazione",
+    "delivery": "Consegna in {count} giorni lavorativi",
+    "free_delivery": "Consegna gratuita",
+    "pickup": "Ritiro in filiale",
+    "not_available": "Non disponibile",
+    "specs": "Specifiche",
+    "description": "Descrizione",
+    "reviews": "Recensioni",
+    "related": "Prodotti correlati",
+    "delivery_tomorrow": "Consegna domani",
+    "click_collect_available": "Click & Collect disponibile nel tuo negozio",
+    "financing_from": "Da CHF",
+    "financing_month": "mese",
+    "financing_interest": "con finanziamento allo 0%",
+    "free_delivery_min": "da CHF 49",
+    "warranty_years": "2 anni",
+    "warranty": "Garanzia",
+    "vat_included": "IVA inclusa",
+    "article_number": "Art. n.:"
+  },
+  "availability": {
+    "AVAILABLE": "Disponibile",
+    "INSTOCK": "Disponibile",
+    "LOW_STOCK": "Scorte basse",
+    "OUT_OF_STOCK": "Esaurito",
+    "PREORDER": "Pre-ordine",
+    "DISCONTINUED": "Fuori produzione",
+    "ONORDER": "Disponibile su ordinazione"
+  },
+  "sort": {
+    "label": "Ordina per",
+    "newest": "Novità",
+    "popular": "Più popolari",
+    "price_asc": "Prezzo crescente",
+    "price_desc": "Prezzo decrescente",
+    "rating": "Valutazione"
+  },
+  "filter": {
+    "title": "Filtra",
+    "reset": "Reimposta",
+    "price_range": "Fascia di prezzo",
+    "min_price": "Prezzo min",
+    "max_price": "Prezzo max",
+    "brand": "Marchio",
+    "availability": "Disponibilità",
+    "in_store": "Solo Click & Collect",
+    "apply": "Applica"
+  },
+  "no_products": "Nessun prodotto trovato",
+  "loading": "Caricamento…",
+  "product": "Prodotto",
+  "card": {
+    "instead_of": "anziché"
+  }
+}
