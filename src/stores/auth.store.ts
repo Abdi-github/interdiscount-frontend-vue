@@ -81,6 +81,7 @@ export const useAuthStore = defineStore('auth', () => {
         localStorage.removeItem('interdiscount_user');
       }
     }
+  }
 
   hydrateFromStorage();
 
