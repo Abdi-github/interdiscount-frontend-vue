@@ -14,10 +14,14 @@ services:
       - traefik
     labels:
       - "traefik.enable=true"
+      - "traefik.docker.allownonrunning=true"
       - "traefik.http.routers.interdiscount-vue.rule=Host(`interdiscount-vue.swiftapp.ch`)"
       - "traefik.http.routers.interdiscount-vue.entrypoints=websecure"
       - "traefik.http.routers.interdiscount-vue.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.interdiscount-vue.middlewares=sablier-interdiscount@file"
       - "traefik.http.services.interdiscount-vue.loadbalancer.server.port=80"
+      - "sablier.enable=true"
+      - "sablier.group=interdiscount"
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1/"]
       interval: 30s
