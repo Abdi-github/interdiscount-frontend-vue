@@ -46,8 +46,7 @@ function handleLogout() {
     <template #header>
       <div class="flex items-center justify-between w-full bg-[#d32f2f] text-white px-4 py-3 -mt-4 -mx-4">
         <div class="flex items-center gap-1.5">
-          <span class="bg-white text-[#d32f2f] w-7 h-7 rounded-[5px] flex items-center justify-center font-black text-base leading-none">i</span>
-          <span class="font-bold text-base">InterDiscount</span>
+          <img src="/logo.svg" alt="InterDiscount" class="h-7" style="filter: brightness(0) invert(1)" />
         </div>
         <button class="text-white hover:text-gray-200" @click="uiStore.toggleMobileMenu()">
           <i class="pi pi-times text-lg" />

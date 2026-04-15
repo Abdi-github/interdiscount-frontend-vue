@@ -113,15 +113,7 @@ function switchLanguage(code: string) {
       <div class="border-b border-[#2a2a2a]">
         <div class="max-w-[1200px] mx-auto px-4 lg:px-6 py-4 flex items-center gap-4 flex-wrap">
           <!-- Logo -->
-          <div class="flex items-center gap-1.5">
-            <span class="bg-[#d32f2f] text-white w-8 h-8 rounded-[6px] flex items-center justify-center font-black text-lg leading-none shrink-0">
-              i
-            </span>
-            <span class="flex flex-col leading-none">
-              <span class="font-extrabold text-white text-[0.85rem] leading-[1.1]">Inter</span>
-              <span class="font-extrabold text-white text-[0.85rem] leading-[1.1]">Discount</span>
-            </span>
-          </div>
+          <img src="/logo.svg" alt="Interdiscount" class="h-9" style="filter: brightness(0) invert(1)" />
 
           <router-link
             :to="{ name: 'stores', params: { locale: currentLocale() } }"

@@ -47,15 +47,9 @@ function openMiniCart() {
       <!-- Logo -->
       <router-link
         :to="{ name: 'home', params: { locale: locale() } }"
-        class="flex items-center gap-1.5 shrink-0 no-underline"
+        class="flex items-center shrink-0 no-underline"
       >
-        <span class="bg-[#d32f2f] text-white w-9 h-9 rounded-[7px] flex items-center justify-center font-black text-xl leading-none shrink-0">
-          i
-        </span>
-        <span class="flex flex-col leading-none">
-          <span class="font-extrabold text-[#1a1a1a] text-[0.95rem] leading-[1.1] tracking-[-0.3px]">Inter</span>
-          <span class="font-extrabold text-[#1a1a1a] text-[0.95rem] leading-[1.1] tracking-[-0.3px]">Discount</span>
-        </span>
+        <img src="/logo.svg" alt="Interdiscount" class="h-10" />
       </router-link>
 
       <!-- Search bar (desktop) -->

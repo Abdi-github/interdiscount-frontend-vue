@@ -11,15 +11,9 @@
         <div class="text-center mb-6">
           <router-link
             :to="{ name: 'home', params: { locale: $route.params.locale || 'de' } }"
-            class="inline-flex items-center gap-2 no-underline"
+            class="inline-flex items-center no-underline"
           >
-            <span class="bg-[#d32f2f] text-white w-10 h-10 rounded-[7px] flex items-center justify-center font-black text-2xl leading-none">
-              i
-            </span>
-            <span class="flex flex-col leading-none text-left">
-              <span class="font-extrabold text-gray-900 text-lg leading-[1.1]">Inter</span>
-              <span class="font-extrabold text-gray-900 text-lg leading-[1.1]">Discount</span>
-            </span>
+            <img src="/logo.svg" alt="Interdiscount" class="h-10" />
           </router-link>
         </div>
 

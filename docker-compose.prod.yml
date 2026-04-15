@@ -1,0 +1,32 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: interdiscount_frontend_vue_prod
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - interdiscount_network
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.interdiscount-vue.rule=Host(`interdiscount-vue.swiftapp.ch`)"
+      - "traefik.http.routers.interdiscount-vue.entrypoints=websecure"
+      - "traefik.http.routers.interdiscount-vue.tls.certresolver=letsencrypt"
+      - "traefik.http.services.interdiscount-vue.loadbalancer.server.port=80"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+networks:
+  interdiscount_network:
+    external: true
+  traefik:
+    external: true
