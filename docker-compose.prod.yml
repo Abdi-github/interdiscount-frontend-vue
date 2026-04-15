@@ -5,8 +5,8 @@ services:
       dockerfile: Dockerfile
     container_name: interdiscount_frontend_vue_prod
     restart: unless-stopped
-    ports:
-      - "5173:80"
+    expose:
+      - "80"
     environment:
       - NODE_ENV=production
     networks:
